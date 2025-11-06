@@ -10,7 +10,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { useTournament } from '@/lib/queries/tournaments';
 import { formatDate, formatCurrency, getStatusColor } from '@/lib/utils';
 import { TOURNAMENT_STATUS, TOURNAMENT_FORMAT, ROUTES } from '@/lib/constants';
-import { Calendar, MapPin, Users, Trophy, Share2 } from 'lucide-react';
+import { Calendar, MapPin, Users, Share2 } from 'lucide-react';
 import Link from 'next/link';
 
 export default function TournamentDetailPage({
