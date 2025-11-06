@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "pnpm install --frozen-lockfile && pnpm build --filter=api"
+buildCommand = "pnpm install --frozen-lockfile && pnpm build --filter=@padel/api"
 
 [deploy]
 startCommand = "cd apps/api && node dist/main.js"
