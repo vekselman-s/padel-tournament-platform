@@ -1,0 +1,31 @@
+{
+  "name": "padel-tournament-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Complete platform for managing padel tournaments",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "db:migrate": "pnpm --filter @padel/database db:migrate",
+    "db:push": "pnpm --filter @padel/database db:push",
+    "db:seed": "pnpm --filter @padel/database db:seed",
+    "db:studio": "pnpm --filter @padel/database db:studio",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^2.3.3",
+    "prettier": "^3.4.2",
+    "turbo": "^2.3.3",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
